@@ -1,0 +1,72 @@
+#root {
+	position: fixed;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+
+	background: linear-gradient(
+			255.35deg,
+			#dc3131 0.83%,
+			rgba(255, 79, 79, 0) 108.93%
+		),
+		#ff5e56;
+}
+
+@font-face {
+	font-family: "LabGrotesque";
+	src: local("Lab Grotesque"), local("LabGrotesque-Regular"),
+		url("./assets/fonts/LabGrotesque-Regular.woff") format("woff");
+	font-weight: 400;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "LabGrotesque";
+	src: local("Lab Grotesque Light"), local("LabGrotesque-Light"),
+		url("./assets/fonts/LabGrotesque-Light.woff") format("woff");
+	font-weight: 300;
+	font-style: normal;
+	font-display: swap;
+}
+
+@font-face {
+	font-family: "LabGrotesque";
+	src: local("Lab Grotesque Medium"), local("LabGrotesque-Medium"),
+		url("./assets/fonts/LabGrotesque-Medium.woff") format("woff");
+	font-weight: 500;
+	font-style: normal;
+	font-display: swap;
+}
+
+body {
+	font-family: "LabGrotesque", sans-serif;
+	font-weight: 400;
+}
+
+.open-btn {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+
+	cursor: pointer;
+	padding: 16px 32px;
+
+	border: 1px solid #ffffff;
+	filter: drop-shadow(0px 0px 44px #cfdae7);
+	border-radius: 6px;
+	background-color: transparent;
+	color: #fff;
+	transform: translate(-50%, -50%);
+	transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 24px;
+}
+
+.open-btn:hover {
+	background-color: #fff;
+	color: #000;
+}
